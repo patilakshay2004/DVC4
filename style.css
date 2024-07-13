@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    
+}
+body{
+    background-image: url('https://wallpapers.com/images/hd/pure-black-background-py9pa0f1mlsscm9s.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content{
+    animation: floating 3s ease-in-out infinite;
+    width: 500px;
+    padding: 5rem 1rem 1rem 1rem;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-card{
+    background-color: white;
+    width: 100%;
+    padding: 5rem 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#title-logo{
+    width: 5rem;
+    height: 5rem;
+}
+
+#man-logo{
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    bottom: -30%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.info-card{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 1rem 2rem 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+}
+.info-card h1{
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.info-card span{
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+.info-card p{
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+.btn-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.btn-card button{
+    text-align: start;
+    background-color: #525252;
+    color: #f3eadf;
+    border-radius: 1.2rem;
+    padding: 0.8rem;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.btn-card button span{
+    margin-left: 10rem;
+    text-align: center;
+}
+.btn-card button i{
+    padding: 0 1rem;
+}
+
+
+.icon-card i{
+    color: white;
+    margin-right: 0.8rem;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+
+}
+
+
+@media only screen and (max-width: 575px) {
+    body {
+      font-size: 14px;
+    }
+    .content{
+        width: 450px;
+    }
+    .btn-card button span{
+        margin-left: 8rem;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    body {
+      font-size: 14px;
+    }
+    .content{
+        width: 350px;
+    }
+
+    .btn-card button span{
+        margin-left: 3rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 350px) {
+    body {
+      font-size: 14px;
+    }
+    .content{
+        width: 300px;
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+    body {
+      font-size: 14px;
+    }
+    .content{
+        width: 250px;
+    }
+    .btn-card button span{
+        margin-left: 1rem;
+    }
+
+  }
+
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
